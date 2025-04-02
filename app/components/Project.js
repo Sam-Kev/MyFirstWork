@@ -6,7 +6,7 @@ const projects = [
     description: "A personal portfolio built with Next.js, showcasing my projects and skills.",
     tech: ["Next.js", "Tailwind CSS", "Vercel"],
     link: "https://my-new-ten.vercel.app/",
-    image: "/portfolio.jpg", // Image should be relative to the public folder
+    image: "/Portfolio.png", // Image should be relative to the public folder
     width: 300,
     height: 300,
   },
@@ -26,9 +26,9 @@ const projects = [
     description: "A personal project built with Note++, showcasing my skills.",
     tech: ["Next.js", "Tailwind CSS", "Vercel"],
     link: "https://my-new-ten.vercel.app/",
-    image: "/note.jpg",  // Image should be relative to the public folder
+    image: "/Note.png",  // Image should be relative to the public folder
     width: 300,
-    height:300,
+    height: 300,
   },
 ];
 
