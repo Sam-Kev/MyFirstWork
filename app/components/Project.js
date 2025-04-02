@@ -7,8 +7,8 @@ const projects = [
     tech: ["Next.js", "Tailwind CSS", "Vercel"],
     link: "https://my-new-ten.vercel.app/",
     image: "/portfolio.jpg", // Image should be relative to the public folder
-    width: 600,
-    height: 600,
+    width: 300,
+    height: 300,
   },
 
   {
@@ -17,8 +17,8 @@ const projects = [
     tech: ["Next.js", "CSS", "Vercel", "VS Code"],
     link: "https://my-new-ten.vercel.app/",
     image: "/WebCode.png",  // Image should be relative to the public folder
-    width: 600,
-    height: 600,
+    width: 300,
+    height: 300,
   },
 
   {
@@ -27,8 +27,8 @@ const projects = [
     tech: ["Next.js", "Tailwind CSS", "Vercel"],
     link: "https://my-new-ten.vercel.app/",
     image: "/note.jpg",  // Image should be relative to the public folder
-    width: 600,
-    height: 600,
+    width: 300,
+    height:300,
   },
 ];
 
