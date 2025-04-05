@@ -1,12 +1,18 @@
-import React from 'react';
+import React from 'react'; 
 import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className="flex flex-col items-center justify-center h-screen text-center bg-gray-900 text-white px-6">
+    <section className="flex flex-col items-center justify-center min-h-screen text-center bg-gray-900 text-white px-6">
       {/* Profile Image */}
-      <div className="relative w-40 h-40 md:w-48 md:h-48 mb-6 -full overflow-hidden border-4 border-grey-500 shadow-lg">
-        <Image src="/Prof.png" alt="Sam" width={192} height={192} className="object-cover" />
+      <div className="relative w-40 h-40 md:w-48 md:h-48 mb-6 rounded-full overflow-hidden border-4 border-gray-500 shadow-lg">
+        <Image
+          src="/Prof.png"
+          alt="Sam"
+          width={192}
+          height={192}
+          className="object-cover object-center"
+        />
       </div>
 
       {/* Heading */}
@@ -16,7 +22,7 @@ const Hero = () => {
 
       {/* Description */}
       <p className="text-lg md:text-xl mt-4 max-w-2xl text-gray-300 leading-relaxed">
-        A web programmer and technical trainer with a passion for 
+        A web programmer and technical trainer with a passion for
         <span className="text-yellow-400 font-semibold"> technology</span>, 
         <span className="text-yellow-400 font-semibold"> education</span>, and 
         <span className="text-yellow-400 font-semibold"> training</span>.  
