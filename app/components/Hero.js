@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="flex flex-col items-center justify-center h-screen text-center bg-gray-900 text-white px-6">
       {/* Profile Image */}
-      <div className="relative w-40 h-40 md:w-48 md:h-48 mb-6 rounded-full overflow-hidden border-4 border-grey-500 shadow-lg">
+      <div className="relative w-40 h-40 md:w-48 md:h-48 mb-6 -full overflow-hidden border-4 border-grey-500 shadow-lg">
         <Image src="/Prof.jpg" alt="Sam" width={192} height={192} className="object-cover" />
       </div>
 
