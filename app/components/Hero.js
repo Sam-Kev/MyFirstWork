@@ -1,50 +1,38 @@
-// Hero.js
-"use client";
-import Image from "next/image";
-import React from "react";
-import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
+import React from 'react';
+import Image from 'next/image';
 
-export default function Hero(){
+const Hero = () => {
   return (
-    <section
-      className="relative bg-[#1a1c20] mt-[100px] overflow-hidden"
-      id="home"
-    >
-    
-      <div className="relative max-w-[1200px] mx-auto flex flex-col md:flex-row items-center text-center md:text-left py-[15vh] px-6 md:px-8">
-        {/* Text Content */}
-        <div className="flex-1">
-          <h1 className="text-4xl md:text-6xl leading-tight text-gray-500">
-            <span className="text-white text-xl md:text-2xl block mb-3">
-              Hi, I am
-            </span>
-            Samuel <br />
-            Martei
-          </h1>
-          <h2 className="text-lg md:text-2xl text-white leading-relaxed mt-3 md:mt-4 mb-6">
-            A <strong className="text-white">web programmer and technical trainer</strong> dedicated to empowering individuals 
-            and organizations with cutting-edge web solutions and technical expertise.
-          </h2>
-          <a
-            href="#Projects"
-            className="inline-block px-10 py-4 md:px-12 md:py-5 border-2 border-gray-500 text-white uppercase font-bold tracking-wider text-sm md:text-base hover:bg-gray-500 transition-all duration-300 rounded-full"
-          >
-            View Projects
-          </a>
-        </div>
-
-        {/* Normal Image (Only for larger screens) */}
-        <div className="hidden md:block flex-1 relative">
-          <Image
-            src="/Prof.jpg"
-            width={600}
-            height={600}
-            alt="portrait"
-            className="w-full max-w-[400px] mx-auto"
-          />
-        </div>
+    <section className="flex flex-col items-center justify-center h-screen text-center bg-gray-900 text-white px-6">
+      {/* Profile Image */}
+      <div className="relative w-40 h-40 md:w-48 md:h-48 mb-6 rounded-full overflow-hidden border-4 border-grey-500 shadow-lg">
+        <Image src="/Prof.jpg" alt="Sam" width={192} height={192} className="object-cover" />
       </div>
+
+      {/* Heading */}
+      <h1 className="text-4xl md:text-5xl font-extrabold">
+        Hi, I'm <span className="text-blue-500">Samuel Martei</span>
+      </h1>
+
+      {/* Description */}
+      <p className="text-lg md:text-xl mt-4 max-w-2xl text-gray-300 leading-relaxed">
+        A web programmer and technical trainer with a passion for 
+        <span className="text-yellow-400 font-semibold"> technology</span>, 
+        <span className="text-yellow-400 font-semibold"> education</span>, and 
+        <span className="text-yellow-400 font-semibold"> training</span>.  
+        I am dedicated to empowering individuals and organizations with cutting-edge web solutions and technical expertise.
+      </p>
+
+      {/* CTA Button */}
+      <a 
+        href="#projects"
+        className="mt-6 px-6 py-3 bg-blue-500 text-white rounded-md text-lg font-medium 
+        hover:bg-yellow-600 transition duration-300 shadow-lg"
+      >
+        View My Work
+      </a>
     </section>
   );
 };
+
+export default Hero;
